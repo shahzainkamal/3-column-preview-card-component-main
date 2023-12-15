@@ -1,0 +1,125 @@
+:root {
+  /* primary */
+  --clr-primary-100: hsl(31, 77%, 52%);
+  --clr-primary-200: hsl(184, 100%, 22%);
+  --clr-primary-300: hsl(179, 100%, 13%);
+
+  /* neutral */
+  --clr-neutral-100: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-200: hsl(0, 0%, 95%);
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    
+  }
+  .section-one {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: none;
+    width: 30%;
+  }
+
+  .section-three {
+    border-bottom-left-radius: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .section-one {
+    border-bottom-left-radius: none;
+  }
+  .section-three {
+    border-top-left-radius: none;
+  }
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  margin-left: 14%;
+  margin-top: 14%;
+}
+h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+p {
+  font-size: 15px;
+  color: lightgray;
+  font-weight: 100;
+  width: 80%;
+  line-height: 22px;
+}
+
+.section-one {
+  background-color: var(--clr-primary-100);
+  color: white;
+  width: 35%;
+  padding: 40px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.section-one button {
+  cursor: pointer;
+  margin-top: 40%;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  border-color: white;
+  color: var(--clr-primary-100);
+}
+.section-one button:hover {
+  color: white;
+  background-color: var(--clr-primary-100);
+}
+
+.section-two {
+  background-color: var(--clr-primary-200);
+  color: white;
+  width: 33%;
+  padding: 40px;
+}
+.section-two button {
+  cursor: pointer;
+  margin-top: 40%;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  border-color: white;
+  color: var(--clr-primary-200);
+}
+.section-two button:hover {
+  color: white;
+  background-color: var(--clr-primary-200);
+}
+.section-three {
+  background-color: var(--clr-primary-300);
+  color: white;
+  width: 33%;
+  padding: 40px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 10px;
+}
+.section-three button {
+  cursor: pointer;
+  margin-top: 40%;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  border-color: white;
+  color: var(--clr-primary-300);
+}
+.section-three button:hover {
+  color: white;
+  background-color: var(--clr-primary-300);
+}
